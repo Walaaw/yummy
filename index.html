@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- link aos -->
+    <link rel="stylesheet" href="./aos/aos.css">
+    <!-- link style -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="loading-screen position-fixed top-0 bottom-0 start-0 end-0 bg-black ">
+        <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+    <div class="side-nav position-fixed d-flex vh-100">
+        <div class="links  d-flex bg-black flex-column justify-content-between h-100">
+            <ul class=" nav-links list-unstyled p-2 mt-5 ">
+                <li class="position-relative p-2 "onclick="displaySearchInput(); closeSideNav();" >Search</li>
+                <li class="position-relative p-2" onclick="getCategories(); closeSideNav();" >Categories</li>
+                <li class="position-relative p-2" onclick="getArea(); closeSideNav();">Area</li>
+                <li class="position-relative p-2" onclick="getIngrediant(); closeSideNav();">Ingredients</li>
+                <li class="position-relative p-2" onclick=" getContactUs(); closeSideNav();">Contact Us</li>
+            </ul>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f p-2"></i>
+                <i class="fa-brands fa-instagram  p-2"></i>
+                <i class="fa-brands fa-linkedin  p-2"></i>
+                <i class="fa-brands fa-github  p-2"></i>
+                <div class="footer">
+                    <p class="fs p-1">
+                        Copyright © 2022 <span class=" text-warning"> by Kareem Ezzat.</span><br> All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="bar bg-white d-flex flex-column justify-content-between text-center h-100 py-3">
+            <img src="./images/logo.png" alt="logo" class="logo">
+            <i id="barsToggle" class="fa-solid fa-bars text-black fa-2x"></i>
+            <div class="bar-icon">
+                <i class="fa-solid fa-share-nodes d-block text-black"></i>
+                <i class="fa-solid fa-globe text-black"></i>
+            </div>
+        </div>
+    </div>
+
+    <section class="allMeals p-5">
+        <div class=" container">
+            <div class="row-items row g-3 mt-4">
+              
+            </div>
+           
+        </div>
+        <div class="inner-loading-screen position-fixed top-0 bottom-0 start-0 end-0 bg-black ">
+            <i class="fa-solid fa-spinner fa-spin fa-5x text-warning"></i>
+        </div>
+    </section>
+ 
+
+    <!-- link jquery -->
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <!-- link bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- link aos -->
+    <script src="./aos/aos.js"></script>
+    <!-- link main  -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
