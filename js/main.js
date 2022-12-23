@@ -246,7 +246,7 @@ function displayDetails(array) {
 async function searchByName(name) {
   $(".inner-loading-screen").fadeIn(500);
   let resbonse = await fetch(
-    `https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`
+    `  https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`
   );
   resbonse = await resbonse.json();
   let result = resbonse.meals;
